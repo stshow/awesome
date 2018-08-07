@@ -23,9 +23,10 @@ theme.fg_urgent                                 = "#CC9393"
 theme.bg_normal                                 = "#1A1A1A"
 theme.bg_focus                                  = "#313131"
 theme.bg_urgent                                 = "#1A1A1A"
-theme.border_width                              = 1
+theme.border_width                              = 2
 theme.border_normal                             = "#3F3F3F"
-theme.border_focus                              = "#7F7F7F"
+--theme.border_focus                              = "#8F7F7F"
+theme.border_focus                              = "#FF0000"
 theme.border_marked                             = "#CC9393"
 theme.tasklist_bg_focus                         = "#1A1A1A"
 theme.titlebar_bg_focus                         = theme.bg_focus
@@ -239,7 +240,7 @@ theme.volume = lain.widget.alsa({
 
         widget:set_markup(markup.font(theme.font, " " .. volume_now.level .. "% "))
     end
-})
+ })
 
 -- Net
 local neticon = wibox.widget.imagebox(theme.widget_net)
